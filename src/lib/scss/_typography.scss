@@ -1,12 +1,15 @@
 a {
 	color: var(--color--text);
 	text-decoration-color: var(--color--primary);
-	text-underline-offset: 0.1em;
-	text-decoration-thickness: 2px;
-	transition: all 0.2s ease-in-out;
+	text-underline-offset: 0.2em;
+	text-decoration-thickness: 0.1em;
+	transition: all 0.08s ease-in-out;
 
 	&:hover {
-		text-underline-offset: 0.3em;
+		// text-underline-offset: 0.3em;
+		// text-decoration-thickness: 2px;
+		// Highlight clickable text with shadow in background
+		text-shadow: 0px 0px 3px var(--color--primary);
 	}
 }
 

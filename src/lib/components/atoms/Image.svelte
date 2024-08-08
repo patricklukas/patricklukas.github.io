@@ -3,6 +3,7 @@
 
 	export let src: string;
 	export let alt: string;
+	export let href: string | undefined = undefined;
 	export let fullBleed: boolean | undefined = undefined;
 
 	export let formats: string[] = ['avif', 'webp', 'png'];
@@ -36,8 +37,9 @@
 		return srcset;
 	}
 </script>
-
+<a {href} target="_blank" rel="noopener noreferrer">
 <img srcset={buildSrcset()} {src} {alt} loading="lazy" decoding="async" class:full-bleed={fullBleed} />
+</a>
 
 <style lang="scss">
 	img {

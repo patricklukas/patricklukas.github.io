@@ -1,4 +1,5 @@
 <script>
+	import BlogIcon from '$lib/icons/blog.svelte';
 	import FeaturesIcon from '$lib/icons/features.svelte';
 	import GitHubIcon from '$lib/icons/socials/github.svelte';
 	import Button from '$lib/components/atoms/Button.svelte';
@@ -8,19 +9,23 @@
 <section id="hero">
 	<h1 class="hello">Hi, I'm Patrick Lukas!</h1>
 	<p class="intro">
-		<span class="left">Game Developer turned Data Scientist.</span>
-		<span class="right">On a race to find the next big thing.</span>
+		<span class="left">Data Scientist on a race to find the next big thing.</span>
+		<span class="left"></span>
 	</p>
 	<div class="ctas">
 		<Sparkles>
-			<Button href="https://github.com/matfantinel/sveltekit-static-blog-template">
+			<Button href="https://histoire-sveltekit-static-blog-template.vercel.app/">
 				<GitHubIcon slot="icon" />
-				Github
+				Components
 			</Button>
 		</Sparkles>
-		<Button color="primary" href="https://histoire-sveltekit-static-blog-template.vercel.app/">
-			<FeaturesIcon slot="icon" />
+		<Button color="primary" href="/blog">
+			<BlogIcon slot="icon" />
 			Blog
+		</Button>
+		<Button color="primary" href="https://histoire-sveltekit-static-blog-template.vercel.app/">
+			<GitHubIcon slot="icon" />
+			Github
 		</Button>
 	</div>
 </section>

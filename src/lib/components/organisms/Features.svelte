@@ -8,8 +8,8 @@
 
 <ContentSection
 	id="features"
-	title="Features"
-	description="Here are some of the features of this template"
+	title="Latest Projects"
+	
 >
 	<div class="features-container">
 		<div class="three-group-grid">
@@ -19,6 +19,7 @@
 					description={feature.description}
 					image={feature.image}
 					tags={feature.tags}
+					href={feature.href}
 				/>
 			{/each}
 		</div>

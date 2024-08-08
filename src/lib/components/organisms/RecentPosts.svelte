@@ -3,6 +3,7 @@
 	import ContentSection from '$lib/components/organisms/ContentSection.svelte';
 	import type { BlogPost } from '$lib/utils/types';
 	import Button from '$lib/components/atoms/Button.svelte';
+    import Sparkles from '../atoms/Sparkles.svelte';
 
 	export let posts: BlogPost[];
 </script>
@@ -14,7 +15,9 @@
 	align="left"
 >
 	<div slot="button">
-		<Button href="/blog">View More</Button>
+		<Sparkles>
+			<Button href="/blog">View More</Button>
+		</Sparkles>
 	</div>
 	<div class="grid">
 		{#each posts as post}

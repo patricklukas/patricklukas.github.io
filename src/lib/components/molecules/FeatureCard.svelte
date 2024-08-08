@@ -1,22 +1,25 @@
 <script lang="ts">
-	import Card from '$lib/components/atoms/Card.svelte';
-	import Tag from '$lib/components/atoms/Tag.svelte';
-	import type { TagType } from '$lib/utils/types';
-	import Image from '../atoms/Image.svelte';
+	import Card from "$lib/components/atoms/Card.svelte";
+	import Tag from "$lib/components/atoms/Tag.svelte";
+	import type { TagType } from "$lib/utils/types";
+	import Image from "../atoms/Image.svelte";
 
 	export let name: string;
 	export let description: string;
 	export let image: string;
 	export let tags: TagType[] | undefined;
+	export let href: string | undefined = undefined;
 </script>
 
 <Card additionalClass="feature-card">
 	<div class="image" slot="image">
-		<Image src={image} alt="Picture describing the {name} feature" />
+		<Image src={image} alt="Picture describing the {name} feature" {href} />
 	</div>
 	<div class="content" slot="content">
 		<div class="title">
-			<span>{name}</span>
+			<a href={href} target="_blank" rel="noopener noreferrer">
+				<span>{name}</span>
+			</a>
 		</div>
 		<p>{description}</p>
 	</div>

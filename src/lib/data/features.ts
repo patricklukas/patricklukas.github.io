@@ -2,11 +2,12 @@ import type { Feature } from "$lib/utils/types";
 
 export default [ 
   {
-    name: 'Markdown Support',
+    name: 'GoSpice',
     description:
-      'Blog posts are written in Markdown, a simple and nearly-universal format. This means you can bring over your posts from other platforms, and easily export to another if you want to.',
-    image: 'images/features/markdown.jpg',
-    tags: [{ label: 'Powered by MDsveX' }]
+      'A chess engine written in Go. No external dependencies but comes with a custom ML based search and evaluation library.',
+    image: 'images/features/gospice.png',
+    tags: [{ label: 'AI Powered' }, { label: 'MIT Licensed' }],
+    href: 'https://github.com/patricklukas/GoSpice'
   }, 
   {
     name: 'Themeable',

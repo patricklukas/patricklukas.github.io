@@ -8,24 +8,24 @@
 </script>
 
 <div class="socials">
-	<a
+	<!-- <a
 		href="#"
 		target="_blank"
 		rel="noopener noreferrer"
 		title="Say Hi on Telegram"
 	>
 		<TelegramIcon />
-	</a>
-	<a
+	</a> -->
+	<!-- <a
 		href="#"
 		target="_blank"
 		rel="me noreferrer"
 		title="Say Hi on Mastodon"
 	>
 		<MastodonIcon />
-	</a>
+	</a> -->
 	<a
-		href="#"
+		href="https://github.com/patricklukas"
 		target="_blank"
 		rel="noopener noreferrer"
 		title="See my GitHub profile"
@@ -40,14 +40,14 @@
 	>
 		<LinkedInIcon />
 	</a>
-	<a
+	<!-- <a
 		href="#"
 		target="_blank"
 		rel="noopener noreferrer"
 		title="Send an email"
 	>
 		<EmailIcon />
-	</a>
+	</a> -->
 </div>
 
 <style lang="scss">
