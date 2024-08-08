@@ -4,6 +4,7 @@
 	"private": true,
 	"scripts": {
 		"dev": "vite dev --host",
+		"deploy": "npm run build && gh-pages -d build -t true",
 		"build": "vite build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
@@ -49,6 +50,7 @@
 		"@fontsource/inter": "^4.5.15",
 		"@fontsource/merriweather": "^4.5.14",
 		"@fontsource/open-sans": "^5.0.28",
-		"@fontsource/ubuntu-mono": "^4.5.11"
+		"@fontsource/ubuntu-mono": "^4.5.11",
+		"gh-pages": "^6.1.1"
 	}
 }
