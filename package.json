@@ -50,7 +50,6 @@
 		"@fontsource/inter": "^4.5.15",
 		"@fontsource/merriweather": "^4.5.14",
 		"@fontsource/open-sans": "^5.0.28",
-		"@fontsource/ubuntu-mono": "^4.5.11",
-		"gh-pages": "^6.1.1"
+		"@fontsource/ubuntu-mono": "^4.5.11"
 	}
 }
