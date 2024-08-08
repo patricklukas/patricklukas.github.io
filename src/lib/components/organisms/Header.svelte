@@ -9,7 +9,7 @@
 <header class:has-background={showBackground}>
 	<nav class="container">
 		<a class="logo" href="/" aria-label="Site logo">
-			<Logo />
+			<Logo animated={false} />
 		</a>
 		<div class="links">
 			<a href="/blog">Blog</a>
