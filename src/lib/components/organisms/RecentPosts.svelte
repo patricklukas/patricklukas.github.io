@@ -1,23 +1,16 @@
 <script lang="ts">
-	import BlogPostCard from '$lib/components/molecules/BlogPostCard.svelte';
-	import ContentSection from '$lib/components/organisms/ContentSection.svelte';
-	import type { BlogPost } from '$lib/utils/types';
-	import Button from '$lib/components/atoms/Button.svelte';
-    import Sparkles from '../atoms/Sparkles.svelte';
+	import BlogPostCard from "$lib/components/molecules/BlogPostCard.svelte";
+	import ContentSection from "$lib/components/organisms/ContentSection.svelte";
+	import type { BlogPost } from "$lib/utils/types";
+	import Button from "$lib/components/atoms/Button.svelte";
+	import Sparkles from "../atoms/Sparkles.svelte";
 
 	export let posts: BlogPost[];
 </script>
 
-<ContentSection
-	id="recent-posts"
-	title="Blog posts"
-	description="This section shows the 4 most recent blog posts. Check them out for tips on how to get started!"
-	align="left"
->
+<ContentSection id="recent-posts" title="Latest Blog Posts" align="left">
 	<div slot="button">
-		<Sparkles>
-			<Button href="/blog">View More</Button>
-		</Sparkles>
+		<Button href="/blog">View More</Button>
 	</div>
 	<div class="grid">
 		{#each posts as post}
@@ -34,7 +27,7 @@
 </ContentSection>
 
 <style lang="scss">
-	@import '$lib/scss/breakpoints.scss';
+	@import "$lib/scss/breakpoints.scss";
 
 	.grid {
 		width: 100%;

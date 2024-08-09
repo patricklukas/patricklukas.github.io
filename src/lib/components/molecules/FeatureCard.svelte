@@ -11,13 +11,13 @@
 	export let href: string | undefined = undefined;
 </script>
 
-<Card additionalClass="feature-card">
+<Card {href} additionalClass="feature-card">
 	<div class="image" slot="image">
-		<Image src={image} alt="Picture describing the {name} feature" {href} />
+		<Image src={image} alt="Picture describing the {name} feature" />
 	</div>
 	<div class="content" slot="content">
 		<div class="title">
-			<a href={href} target="_blank" rel="noopener noreferrer">
+			<a target="_blank" rel="noopener noreferrer">
 				<span>{name}</span>
 			</a>
 		</div>

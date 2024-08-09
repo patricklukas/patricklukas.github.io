@@ -1,5 +1,8 @@
 _site
 
+# frontmatter
+.frontmatter
+
 # Build
 build
 

@@ -7,18 +7,18 @@
 </script>
 
 <section id="hero">
-	<h1 class="hello">Hi, I'm Patrick Lukas!</h1>
+	<h1 class="hello">Hi, I'm Patrick Hein</h1>
 	<p class="intro">
-		<span class="left">Data Scientist on a race to find the next big thing.</span>
-		<span class="left"></span>
+		<span class="center">Data Scientist on a race to find the next big thing.</span>
+		<span class="center"></span>
 	</p>
 	<div class="ctas">
-		<Sparkles>
+		<!-- <Sparkles>
 			<Button href="https://histoire-sveltekit-static-blog-template.vercel.app/">
 				<GitHubIcon slot="icon" />
 				Components
 			</Button>
-		</Sparkles>
+		</Sparkles> -->
 		<Button color="primary" href="/blog">
 			<BlogIcon slot="icon" />
 			Blog
@@ -62,6 +62,9 @@
 			}
 			.right {
 				text-align: right;
+			}
+			.center {
+				text-align: center;
 			}
 
 			@include for-phone-only {

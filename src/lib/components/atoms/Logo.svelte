@@ -1,9 +1,10 @@
 <script>
-	export let animated = true;
+	export let animated = false;
 </script>
 
 <div class="logo" class:animated>
 	<img src="/favicons/favicon-32x32.png" alt="Site logo" sizes="32x32"/>
+	<!-- <h3>Patrick Lukas</h3> -->
 	<svg
 		id="logo-text"
 		width="723.84009"
@@ -19,8 +20,8 @@
 			transform="translate(-278.77228,-206.83728)"
 			><tspan x="275.57227" y="302.17088" id="tspan1319"
 				><tspan
-					style="font-size:106.667px;font-family:YoungSerif;"
-					id="tspan1317">Patrick Lukas</tspan
+					style="font-size:106.667px;font-family:Sans;"
+					id="tspan1317">Patrick Hein</tspan
 				></tspan
 			></text
 		>
