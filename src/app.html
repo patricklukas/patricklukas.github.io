@@ -13,9 +13,34 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="/favicon.png" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Existing tags -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		{# <link rel="icon" href="/favicon.png" /> #}
+		
+		<!-- SEO Meta Tags -->
+		<title>Your Name - Personal Website</title>
+		<meta name="description" content="Welcome to the personal website of Your Name. Here you'll find my projects, blog posts, and more." />
+		<meta name="keywords" content="Your Name, Portfolio, Blog, Projects, Svelte" />
+		<meta name="author" content="Your Name" />
+
+		<!-- Open Graph Meta Tags -->
+		<meta property="og:title" content="Your Name - Personal Website" />
+		<meta property="og:description" content="Welcome to my personal website where I share my projects and thoughts." />
+		<meta property="og:image" content="https://yourdomain.com/og-image.jpg" />
+		<meta property="og:url" content="https://yourdomain.com" />
+		<meta property="og:type" content="website" />
+
+		<!-- Twitter Card Meta Tags -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Your Name - Personal Website" />
+		<meta name="twitter:description" content="Welcome to my personal website where I share my projects and thoughts." />
+		<meta name="twitter:image" content="https://yourdomain.com/twitter-image.jpg" />
+
+		<!-- Import Picocss -->
+		<link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1/css/pico.min.css">
+
 
 		%sveltekit.head%
 	</head>
